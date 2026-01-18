@@ -1,29 +1,36 @@
-# ⏱️ Cronómetro de Fila Simple
+# ⏱️ Chronometer Data Logger System (Simulación de Colas)
 
-Esta es una aplicación web sencilla, diseñada para **cronometrar y registrar los tiempos de atención de clientes en una fila** (ej. en un banco o ventanilla).
+Este proyecto es una herramienta técnica de **Rapid Prototyping** diseñada para la recolección de datos primarios en estudios de **Teoría de Colas**. La aplicación permite cronometrar y registrar los tiempos de atención de clientes en una fila (ej. cajeros ATM o ventanillas) de manera ágil y precisa.
 
-La herramienta está optimizada para la **recolección de datos de Teoría de Colas**.
+---
 
-## ✨ Funcionalidad Básica
+## ✨ Funcionalidades Principales
 
-* **Registro por Click:** Marca automáticamente la hora del sistema (HH:MM:SS) para cada evento: **Llegada**, **Inicio de Servicio**, y **Fin de Servicio**.
+* **Registro por Click:** Marca automáticamente la hora del sistema (HH:MM:SS) para eventos de **Llegada**, **Inicio de Servicio**, y **Fin de Servicio**.
+* **Cálculos Automáticos:** Calcula instantáneamente el **Tiempo de Espera**, **Tiempo de Atención** y **Tiempo Total**.
+* **Exportación de Datos:** Genera un archivo **CSV** optimizado para su análisis en Excel o importación en software de simulación como **PROMODEL**.
 
-* **Acciones Masivas:** Permite marcar tiempos a varios clientes simultáneamente.
-* **Cálculos Automáticos:** Muestra el **Tiempo de Espera**, el **Tiempo de Atención** y el **Tiempo Total** en minutos.
-* **Exportación:** Genera un archivo **CSV** para su análisis posterior en Excel o para la importación en software de simulación como **PROMODEL**.
+## 📊 Propósito del Análisis (Métricas Clave)
 
-## 📊 Propósito de los Datos
+Los datos recolectados permiten calcular indicadores fundamentales de ingeniería de procesos:
+1. **Tasa de Llegada ($\lambda$):** Frecuencia de arribo de los clientes.
+2. **Tasa de Servicio ($\mu$):** Capacidad de atención del servidor/cajero.
+3. **Utilización ($\rho$):** Porcentaje de ocupación del sistema (determina la carga de trabajo).
 
-Los datos exportados permiten calcular las métricas clave para el análisis de colas:
+## 🛠️ Stack Tecnológico y Desarrollo con IA
 
-1.  **Tasa de Llegada ($\lambda$)**: ¿Con qué frecuencia llegan los clientes?
-2.  **Tasa de Servicio ($\mu$)**: ¿Qué tan rápido atiende el cajero?
-3.  **Utilización ($\rho$)**: ¿Qué porcentaje del tiempo está ocupado cada cajero? (Clave para determinar "cuál trabaja más").
+Esta herramienta destaca por su velocidad de entrega y despliegue, utilizando herramientas de última generación:
+* **Generación:** Prototipado inicial y UI dinámica con **v0.dev** (IA generativa).
+* **Framework:** **Next.js** con **TypeScript** para un tipado robusto.
+* **Despliegue:** **Vercel**, garantizando acceso inmediato desde dispositivos móviles en el sitio de recolección.
 
-## 💻 Uso
+---
 
-1.  **Agregar Cliente:** Ingresa el nombre y el ID del Servidor (C1, C2, etc.).
-2.  **Marcar Tiempos:** Usa los botones de **Llegada**, **Inicio**, y **Fin** para cada cliente.
-3.  **Exportar:** Descarga el CSV con los tiempos y cálculos ya hechos.
+### 👨‍💻 Información del Desarrollador
+
+* **Desarrollador:** [Edwin Aliaga Yujra](https://www.linkedin.com/in/edwin-aliaga-yujra)
+* **Institución:** Universidad Mayor de San Andrés (UMSA)
+* **Materia:** Simulación de Sistemas
+* **Contexto:** Ingeniería de Sistemas - Optimización de procesos mediante recolección de datos reales.
 
 ---
